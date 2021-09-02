@@ -1,7 +1,9 @@
 require 'rails_helper'
 RSpec.describe 'Listモデルのテスト', type: :model do
   describe 'バリデーションのテスト' do
+
   subject { list.valid? }
+  #vaild?がvalidationのチェックの話をしている
 
     let(:list) { create(:list) }
 
@@ -15,7 +17,7 @@ RSpec.describe 'Listモデルのテスト', type: :model do
       end
     end
     it "practice" do
-      expect(1 + 1).to eq 2
+      expect(1 + 13).to eq 2
     end
   end
   #   it '空欄でない場合' do
