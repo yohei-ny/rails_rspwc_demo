@@ -7,9 +7,15 @@ RSpec.describe 'Listモデルのテスト', type: :model do
 
     context 'titleカラム' do
       it '空欄でないこと' do
-        list.title = ''
+        list.title = ''  
+        #validationの設定の結果が返ってきたらfalseとなるため下記が通る
+
         is_expected.to eq false
+        # false == false
       end
+    end
+    it "practice" do
+      expect(1 + 1).to eq 2
     end
   end
   #   it '空欄でない場合' do
