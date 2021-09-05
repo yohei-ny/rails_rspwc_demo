@@ -15,7 +15,12 @@ RSpec.describe 'Listモデルのテスト', type: :model do
         # false == false
       end
     end
-
+    it "test" do
+      before do
+        visit books_path
+      end
+    end
+    end
   end
 
 end
